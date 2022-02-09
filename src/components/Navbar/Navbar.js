@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import logo from "../assets/l.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -20,11 +21,7 @@ function Navbar() {
     <div className={`nav ${show && "nav-black"}`}>
       <div className="nav-content">
         {" "}
-        <img
-          className="nav-logo"
-          src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-          alt="img"
-        />
+        <img className="nav-logo" src={logo} alt="img" />
         <img
           className="nav-avatar"
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
